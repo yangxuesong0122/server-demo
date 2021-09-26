@@ -1,7 +1,7 @@
 const express = require('express')
 
 const app = express()
-app.use(express.static(__dirname + '/static'))
+app.use(express.static(__dirname + '/server/static'))
 app.get('/person', (req, res) => {
     res.send({
         name: 'yxs',
